@@ -94,7 +94,7 @@ public class Solution {
         BigInteger b = BigInteger.valueOf(base);
         for (char c : value.toCharArray()) {
             int digit = Character.digit(c, base);
-            result = result.multiply(b).add(BigInteger.valueOf(digit));
+            result = result.multiply(b).add(BigInteger.valueOf(digit)); 
         }
         return result;
     }
